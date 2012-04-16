@@ -1,8 +1,25 @@
 {
-  "author": "Pavel Lang <langpavel@phpskelet.org>",
   "name": "orm",
   "description": "Object-relational mapper (for MySQL at this time)",
+  "keywords": [
+    "orm",
+    "database",
+    "mysql",
+    "sql"
+  ],
   "version": "0.0.0",
+  "author": "Pavel Lang <langpavel@phpskelet.org>",
+  "homepage": "https://github.com/langpavel/node-orm",
+  "preferGlobal": false,
+  "bugs": {
+    "url": "https://github.com/langpavel/node-orm/issues"
+  },
+  "directories": {
+    "lib": "./lib",
+    "bin": "./bin"
+  },
+  "main": "./lib/index.js",
+  "bin": "./bin/orm-cli.js",
   "engines": {
     "node": "*"
   },
@@ -16,11 +33,15 @@
     "mysql": "*",
     "mysql-pool": "*"
   },
-  "main": "index",
   "bin": {
     "orm": "./bin/orm"
   },
   "scripts": {
-    "test": "nodeunit tests tests/columns"
+    "test": "nodeunit tests tests/columns",
+    "prepublish": "npm prune && npm test && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/langpavel/node-orm.git"
   }
 }
