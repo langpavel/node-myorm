@@ -1,0 +1,26 @@
+{
+  "author": "Pavel Lang <langpavel@phpskelet.org>",
+  "name": "orm",
+  "description": "Object-relational mapper (for MySQL at this time)",
+  "version": "0.0.0",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "commander": "*"
+  },
+  "devDependencies": {
+    "nodeunit": "*"
+  },
+  "optionalDependencies": {
+    "mysql": "*",
+    "mysql-pool": "*"
+  },
+  "main": "index",
+  "bin": {
+    "orm": "./bin/orm"
+  },
+  "scripts": {
+    "test": "nodeunit tests tests/columns"
+  }
+}
