@@ -1,5 +1,5 @@
 {
-  "name": "orm",
+  "name": "myorm",
   "description": "Object-relational mapper (for MySQL at this time)",
   "keywords": [
     "orm",
@@ -9,17 +9,20 @@
   ],
   "version": "0.0.0",
   "author": "Pavel Lang <langpavel@phpskelet.org>",
-  "homepage": "https://github.com/langpavel/node-orm",
-  "preferGlobal": false,
-  "bugs": {
-    "url": "https://github.com/langpavel/node-orm/issues"
+  "homepage": "https://github.com/langpavel/node-myorm",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/langpavel/node-myorm.git"
   },
+  "bugs": {
+    "url": "https://github.com/langpavel/node-myorm/issues"
+  },
+  "main": "./lib/index.js",
+  "bin": "./bin/myorm-cli.js",
   "directories": {
     "lib": "./lib",
     "bin": "./bin"
   },
-  "main": "./lib/index.js",
-  "bin": "./bin/orm-cli.js",
   "engines": {
     "node": "*"
   },
@@ -34,14 +37,10 @@
     "mysql-pool": "*"
   },
   "bin": {
-    "orm": "./bin/orm"
+    "myorm": "./bin/myorm"
   },
   "scripts": {
     "test": "nodeunit tests tests/columns",
     "prepublish": "npm prune && npm test && git push"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/langpavel/node-orm.git"
   }
 }
