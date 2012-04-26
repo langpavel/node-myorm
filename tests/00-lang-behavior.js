@@ -22,4 +22,15 @@ exports['is EventEmitter#emit synchronous'] = function(test) {
   scopeDone = true;
 
   e.emit('test', true);
-}
+};
+
+
+exports['if Array.isArray working'] = function(test) {
+  test.expect(3);
+
+  test.equal(typeof Array.isArray, 'function');
+  test.ok(Array.isArray([]));
+  test.ok(!Array.isArray({"0": 0, length: 1}));
+
+  test.done();
+};
