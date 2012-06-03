@@ -1,4 +1,4 @@
-var columns = require('../../lib/columns');
+var columns = require('../../.').columns;
 
 
 

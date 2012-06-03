@@ -1,5 +1,6 @@
 {
   "name": "myorm",
+  "version": "0.1.0alpha1",
   "description": "Object-relational mapper (for MySQL at this time)",
   "keywords": [
     "orm",
@@ -7,7 +8,6 @@
     "mysql",
     "sql"
   ],
-  "version": "0.0.0",
   "author": "Pavel Lang <langpavel@phpskelet.org>",
   "homepage": "https://github.com/langpavel/node-myorm",
   "repository": {
@@ -17,8 +17,8 @@
   "bugs": {
     "url": "https://github.com/langpavel/node-myorm/issues"
   },
-  "main": "./lib/index.js",
-  "bin": "./bin/myorm-cli.js",
+  "main": "./lib/myorm",
+  "bin": "./bin/myorm-cli",
   "directories": {
     "lib": "./lib",
     "bin": "./bin"

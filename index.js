@@ -1,1 +1,1 @@
-exports.Model = require('./lib/model');
+module.exports = require('./lib/myorm');
