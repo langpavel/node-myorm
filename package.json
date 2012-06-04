@@ -1,6 +1,6 @@
 {
   "name": "myorm",
-  "version": "0.1.0alpha1",
+  "version": "0.1.0alpha2",
   "description": "Object-relational mapper (for MySQL at this time)",
   "keywords": [
     "orm",
